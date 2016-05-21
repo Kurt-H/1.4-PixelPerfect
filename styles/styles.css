@@ -81,7 +81,6 @@ header h1, header h3{
   width: 620px;
   padding-left: 163px;
   padding-right: 78px;
-
  }
 
  .main-content-heading{
@@ -110,20 +109,26 @@ header h1, header h3{
 
 }
 
-.social{
-
+.side-content-top{
+  align-items: center;
 }
-
 
 .headshot-side{
   display:block;
   height: 85px;
   width: 85px;
+  margin:0 auto;
 }
 
-
 .author{
+  display:block;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.author,
+.social-links{
+  text-align: center;
 }
 
 .side-image{
@@ -131,11 +136,9 @@ header h1, header h3{
   height:300px;
   width:278px;
   background-color: blue;
-  align-content: center;
 }
 
 .about{
-
   text-transform: uppercase;
 }
 
@@ -143,9 +146,11 @@ header h1, header h3{
   text-transform: uppercase;
 }
 
+.side-content-top{
+  margin: 0 auto;
+}
 
-.social a{
-
+.side-content a{
   display:inline-block;
   float:right;
 }
@@ -171,25 +176,41 @@ header h1, header h3{
 
 .posts-image-blocks{
   padding: 0;
+
 }
 
 .posts-image-blocks li{
- display:inline-block;
+ max-width: 1300px;
+ /*display:inline-block;*/
  height: 331px;
  padding: 0;
  margin: 0;
+ float:left;
 }
 
-.cool,
-.post{
+.posts ul li{
+  list-style: none;
+  text-decoration: none;
+}
+.cool{
+  background-color: red;
   width: 325px;
+
 }
 
-.here {
+.post{
+  background-color: blue;
+  width: 325px;
+  margin-right:
+}
+
+.here{
+  background-color: green;
   width: 326px;
 }
 
 .oh{
+  background-color: orange;
   width: 324px;
 }
 
