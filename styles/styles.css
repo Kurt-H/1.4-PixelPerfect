@@ -1,0 +1,213 @@
+/*
+ * General typography and color pallet
+ */
+html{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+/*
+ * Main Layout
+ */
+
+ .container{
+   max-width: 1300px;
+   margin: 0 auto;
+ }
+
+header{
+  background: #FFF url('http://unsplash.it/1300/250') no-repeat;
+  background-size: cover;
+  height: 523px;
+  position: relative; /* for absolutely positioned children */
+  margin-bottom: 62px;
+}
+
+header:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(16, 98, 170, 0.8);
+}
+
+header nav,
+header h1,
+header h3{
+  position: relative;
+}
+
+header h1, header h3{
+  text-align: center;
+  color: white;
+}
+
+.branding,
+.utility-nav {
+  display:inline-block;
+}
+
+.utility-nav {
+  float: right;
+}
+
+.utility-nav a{
+  text-decoration: none;
+}
+
+/*
+ * Main Page Content
+ */
+
+ .main-content-div{
+  display:inline-block;
+  float: left;
+  height: 1007px;
+  width: 620px;
+  padding-left: 163px;
+  padding-right: 78px;
+
+ }
+
+ .main-content-heading{
+    font-size: 62px;
+    margin-top: 0px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+
+  .headshot{
+    border-radius: 50%;
+  }
+
+  .headshot-main{
+    height: 22px;
+    width: 22px;
+  }
+
+/*
+ * SIDE CONTENT
+ */
+.side-content{
+   display:inline-block;
+   height: 1007px;
+   width: 278px;
+
+}
+
+.social{
+
+}
+
+
+.headshot-side{
+  display:block;
+  height: 85px;
+  width: 85px;
+}
+
+
+.author{
+  text-transform: uppercase;
+}
+
+.side-image{
+  display:block;
+  height:300px;
+  width:278px;
+  background-color: blue;
+  align-content: center;
+}
+
+.about{
+
+  text-transform: uppercase;
+}
+
+.sidebar-heading{
+  text-transform: uppercase;
+}
+
+
+.social a{
+
+  display:inline-block;
+  float:right;
+}
+
+.clearfix{
+  clear: both;
+}
+
+
+
+/*
+ * BOTTOM
+ */
+
+ .bottom{
+   height: 477px;
+ }
+
+ .posts-headline{
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+.posts-image-blocks{
+  padding: 0;
+}
+
+.posts-image-blocks li{
+ display:inline-block;
+ height: 331px;
+ padding: 0;
+ margin: 0;
+}
+
+.cool,
+.post{
+  width: 325px;
+}
+
+.here {
+  width: 326px;
+}
+
+.oh{
+  width: 324px;
+}
+
+.bottom li{
+  text-transform: uppercase;
+}
+
+
+
+/*
+ * FOOTER
+ */
+
+.footer-nav,
+.footer-nav li{
+  display:inline-block;
+}
+
+.footer-nav{
+  float: right;
+}
