@@ -19,11 +19,12 @@ h3{
   font-family: 'Oswald', sans-serif;
 }
 
+
 /*
  * Main Layout
  */
 
- .container{
+.container{
    max-width: 1300px;
    margin: 0 auto;
  }
@@ -52,22 +53,71 @@ header h3{
   position: relative;
 }
 
-header h1, header h3{
+header h1,
+header h3{
   text-align: center;
-  color: white;
+
+}
+
+header h1,
+.branding span,
+.utility-nav > a{
+  text-transform: uppercase;
+
 }
 
 .branding,
 .utility-nav {
   display:inline-block;
+  height: 57px;
+}
+
+.branding {
+  position: absolute;
+  top: 6px;
+  left: 137px;
+}
+
+.branding span{
+  vertical-align: 22px;
 }
 
 .utility-nav {
   float: right;
+  margin-right: 162px;
 }
 
 .utility-nav a{
   text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.utility-nav{
+  padding-top: 11px;
+}
+
+.utility img{
+  display:inline-block;
+  margin-top: 10px;
+}
+
+header h1{
+  font-size: 81px;
+  letter-spacing: 16px;
+  padding-top: 80px;
+  padding-bottom: 0;
+  margin-bottom: -8px;
+  color: white;
+
+}
+
+header h3{
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding-top: 0;
+  margin-top: 0;
+  color: black;
 }
 
 /*
@@ -85,9 +135,10 @@ header h1, header h3{
 
  .main-content-heading{
     font-size: 62px;
-    margin-top: 0px;
+    margin: 0px;
     line-height: 70px;
     text-transform: uppercase;
+    margin-bottom: 5px
   }
 
   .headshot{
@@ -97,7 +148,27 @@ header h1, header h3{
   .headshot-main{
     height: 22px;
     width: 22px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
+
+
+  .byline  span,
+  .byline  a{
+    display: inline-block;;
+    font-size: 12px;
+  }
+
+  .byline nth-child-selector(2){
+    padding-right: 10px;
+  }
+
+
+
+  .comments div{
+    display:inline-block;
+  }
+
 
 /*
  * SIDE CONTENT
@@ -106,6 +177,7 @@ header h1, header h3{
    display:inline-block;
    height: 1007px;
    width: 278px;
+   margin-top: 20px;
 
 }
 
@@ -118,6 +190,7 @@ header h1, header h3{
   height: 85px;
   width: 85px;
   margin:0 auto;
+  margin-bottom: 13px;
 }
 
 .author{
@@ -126,9 +199,17 @@ header h1, header h3{
   text-align: center;
 }
 
-.author,
 .social-links{
-  text-align: center;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 4px;
+}
+
+.social-links li{
+  display: inline-block;
+  font-size: 12px;
+
+  text-decoration: none;
 }
 
 .side-image{
@@ -160,13 +241,14 @@ header h1, header h3{
 }
 
 
-
 /*
  * BOTTOM
  */
 
  .bottom{
    height: 477px;
+
+
  }
 
  .posts-headline{
@@ -174,34 +256,24 @@ header h1, header h3{
    text-transform: uppercase;
  }
 
-.posts-image-blocks{
-  padding: 0;
-
-}
-
 .posts-image-blocks li{
  max-width: 1300px;
- /*display:inline-block;*/
  height: 331px;
  padding: 0;
  margin: 0;
  float:left;
+ list-style: none;
+ text-decoration: none;
 }
 
-.posts ul li{
-  list-style: none;
-  text-decoration: none;
-}
 .cool{
   background-color: red;
   width: 325px;
-
 }
 
 .post{
-  background-color: blue;
+  background-color: lightblue;
   width: 325px;
-  margin-right:
 }
 
 .here{
@@ -212,6 +284,7 @@ header h1, header h3{
 .oh{
   background-color: orange;
   width: 324px;
+
 }
 
 .bottom li{
